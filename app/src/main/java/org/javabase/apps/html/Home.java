@@ -12,6 +12,6 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         ImageView iv = (ImageView)findViewById(R.id.banner);
-        iv.setImageResource(R.mipmap.logo);
+        iv.setImageResource(R.mipmap.banner);
     }
 }
