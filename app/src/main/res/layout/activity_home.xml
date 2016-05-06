@@ -13,12 +13,13 @@
     <ImageView
         android:id="@+id/banner"
         android:layout_alignParentStart="true"
-        android:background="@color/colorAccent"
         android:layout_alignParentTop="true"
         android:minHeight="60dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toStartOf="@+id/learnHtml" />
+        android:layout_toStartOf="@+id/learnHtml"
+        android:adjustViewBounds="true"
+        android:minWidth="70dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
