@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">LEARN HTML</string>
+
+    <!--here the list of fragment on Learn HTML-->
+    <string-array name="htmlTutorial">
+        <item>HTML Introduction</item>
+        <item>HTML Editors</item>
+        <item>HTML Basic</item>
+        <item>HTML Elements</item>
+        <item>HTML Attributes</item>
+        <item>HTML Headings</item>
+        <item>HTML Paragraphs</item>
+        <item>HTML Styles</item>
+    </string-array>
 </resources>
