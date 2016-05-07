@@ -1,9 +1,9 @@
-package org.javabase.apps.html.learnHtml;
+package org.javabase.apps.w3schools.html.learnHtml;
 
 import android.app.Activity;
 import android.os.Bundle;
 
-import org.javabase.apps.html.R;
+import org.javabase.apps.w3schools.html.R;
 
 
 public class HtmlActivity extends Activity {

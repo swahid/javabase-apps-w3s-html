@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="org.javabase.apps.html.Home"
+    tools:context="org.javabase.apps.w3schools.html.home.Home"
     android:contextClickable="false">
 
     <ImageView
@@ -102,7 +102,6 @@
         android:onClick="htmlReference"/>
 
     <TextView
-
         android:text="\@copyright w3school.com content"
         android:id="@+id/text4"
         android:textSize="14dp"
@@ -112,6 +111,5 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:onClick="htmlreference" />
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

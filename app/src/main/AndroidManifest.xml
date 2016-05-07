@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.javabase.apps.html">
+    package="org.javabase.apps.w3schools.html">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Home">
+        <activity android:name=".home.Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,14 +17,14 @@
         </activity>
         <activity android:name=".learnHtml.HtmlActivity">
             <intent-filter>
-                <action android:name="org.javabase.apps.html.learnHtml.HtmlActivity" />
+                <action android:name="org.javabase.apps.w3schools.html.learnHtml.HtmlActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".htmlref.HtmlRef">
             <intent-filter>
-                <action android:name="org.javabase.apps.html.htmlref.HtmlRef" />
+                <action android:name="org.javabase.apps.w3schools.html.htmlref.HtmlRef" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

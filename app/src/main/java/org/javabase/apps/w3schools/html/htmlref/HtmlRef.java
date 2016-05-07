@@ -1,8 +1,8 @@
-package org.javabase.apps.html.htmlref;
+package org.javabase.apps.w3schools.html.htmlref;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import org.javabase.apps.html.R;
+import org.javabase.apps.w3schools.html.R;
 
 
 public class HtmlRef extends AppCompatActivity {

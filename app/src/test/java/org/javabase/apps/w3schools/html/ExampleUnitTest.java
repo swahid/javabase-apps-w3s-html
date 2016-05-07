@@ -1,4 +1,4 @@
-package org.javabase.apps.html;
+package org.javabase.apps.w3schools.html;
 
 import org.junit.Test;
 

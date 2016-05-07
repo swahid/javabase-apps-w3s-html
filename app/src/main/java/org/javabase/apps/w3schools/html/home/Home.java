@@ -1,9 +1,11 @@
-package org.javabase.apps.html;
+package org.javabase.apps.w3schools.html.home;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import org.javabase.apps.w3schools.html.R;
 
 
 public class Home extends Activity {
@@ -16,11 +18,11 @@ public class Home extends Activity {
     }
 
     /**
-     * calling html activity onclick action on LEARNHTML button.
+     * calling HtmlActivity onclick action on LEARNHTML button.
      * @param v
      */
     public void htmlActivity(View v){
-        Intent intent = new Intent("org.javabase.apps.html.learnHtml.HtmlActivity");
+        Intent intent = new Intent("org.javabase.apps.w3schools.html.learnHtml.HtmlActivity");
         startActivity(intent);
 //        finish();
     }
@@ -30,7 +32,7 @@ public class Home extends Activity {
      * @param v
      */
     public void htmlReference(View v){
-        Intent intent = new Intent("org.javabase.apps.html.htmlref.HtmlRef");
+        Intent intent = new Intent("org.javabase.apps.w3schools.html.htmlref.HtmlRef");
         startActivity(intent);
     }
 
