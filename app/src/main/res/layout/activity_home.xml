@@ -18,8 +18,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toStartOf="@+id/learnHtml"
-        android:adjustViewBounds="true"
-        android:minWidth="70dp" />
+        android:adjustViewBounds="false"
+        android:minWidth="70dp"
+        android:src="@mipmap/home_banner" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -96,7 +97,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_below="@+id/learnHtml"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="htmlReference"/>
 
     <TextView
 
@@ -109,5 +112,6 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="htmlreference" />
 </RelativeLayout>

@@ -1,7 +1,10 @@
-package org.javabase.apps.html;
+package org.javabase.apps.html.learnHtml;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import org.javabase.apps.html.R;
+
 
 public class HtmlActivity extends Activity {
 

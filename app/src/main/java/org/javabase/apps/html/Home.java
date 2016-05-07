@@ -4,15 +4,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
+
 
 public class Home extends Activity {
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        setTitle("Hello apps");
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +15,23 @@ public class Home extends Activity {
 
     }
 
-    private void logo(){
-        ImageView iv = (ImageView)findViewById(R.id.banner);
-        iv.setImageResource(R.mipmap.logo);
+    /**
+     * calling html activity onclick action on LEARNHTML button.
+     * @param v
+     */
+    public void htmlActivity(View v){
+        Intent intent = new Intent("org.javabase.apps.html.learnHtml.HtmlActivity");
+        startActivity(intent);
+//        finish();
     }
-    public void htmlActivity(View view){
 
+    /**
+     * calling htmlrefence activity from htmlref button
+     * @param v
+     */
+    public void htmlReference(View v){
+        Intent intent = new Intent("org.javabase.apps.html.htmlref.HtmlRef");
+        startActivity(intent);
     }
+
 }

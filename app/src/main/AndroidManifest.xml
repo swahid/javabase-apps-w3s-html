@@ -15,7 +15,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HtmlActivity"></activity>
+        <activity android:name=".learnHtml.HtmlActivity">
+            <intent-filter>
+                <action android:name="org.javabase.apps.html.learnHtml.HtmlActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".htmlref.HtmlRef">
+            <intent-filter>
+                <action android:name="org.javabase.apps.html.htmlref.HtmlRef" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
