@@ -2,14 +2,24 @@
     <string name="app_name">LEARN HTML</string>
 
     <!--here the list of fragment on Learn HTML-->
-    <string-array name="htmlTutorial">
+    <string-array name="htmlCatListIem">
         <item>HTML Introduction</item>
         <item>HTML Editors</item>
         <item>HTML Basic</item>
         <item>HTML Elements</item>
         <item>HTML Attributes</item>
         <item>HTML Headings</item>
-        <item>HTML Paragraphs</item>
-        <item>HTML Styles</item>
     </string-array>
+
+    <string-array name="catDescription">
+        <item>This HTML tutorial contains hundreds of HTML examples.</item>
+        <item>Write HTML Using Notepad or TextEdit</item>
+        <item>HTML Basic Examples</item>
+        <item> HTML documents are made up by HTML elements.</item>
+        <item>Attributes provide additional information about HTML elements.</item>
+        <item>Headings are important in HTML documents.</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

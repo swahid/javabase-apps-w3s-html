@@ -10,13 +10,22 @@
     tools:context="org.javabase.apps.w3schools.html.learnHtml.HtmlActivity"
     android:weightSum="1">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="LEARN HTML"
-        android:id="@+id/textView"
+    <fragment
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:name="org.javabase.apps.w3schools.html.learnHtml.HtmlCatList"
+        android:id="@+id/htmlCatFragment"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="155dp" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:name="org.javabase.apps.w3schools.html.learnHtml.HtmlDescription"
+        android:id="@+id/htmlDescriptionFragment"
+        android:layout_toEndOf="@id/htmlCatFragment"
+        android:layout_alignTop="@+id/htmlCatFragment"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>
