@@ -1,4 +1,4 @@
-package org.javabase.apps.w3schools.html.home;
+package org.javabase.apps.w3schools.html.main;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,16 +6,16 @@ import android.os.Bundle;
 import android.view.View;
 
 import org.javabase.apps.w3schools.html.R;
-import org.javabase.apps.w3schools.html.htmlref.HtmlRef;
+import org.javabase.apps.w3schools.html.htmlTags.HtmlTagsActivity;
 import org.javabase.apps.w3schools.html.learnHtml.HtmlActivity;
 
 
-public class Home extends Activity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_main);
 
     }
 
@@ -31,7 +31,7 @@ public class Home extends Activity {
      * calling htmlrefence activity from htmlref button
      */
     public void htmlReference(View v){
-        Intent intent = new Intent(this, HtmlRef.class);
+        Intent intent = new Intent(this, HtmlTagsActivity.class);
         startActivity(intent);
     }
 

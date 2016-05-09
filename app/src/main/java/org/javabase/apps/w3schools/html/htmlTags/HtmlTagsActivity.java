@@ -1,25 +1,26 @@
-package org.javabase.apps.w3schools.html.learnHtml;
+package org.javabase.apps.w3schools.html.htmlTags;
 
-import android.app.Activity;
 import android.app.FragmentManager;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import org.javabase.apps.w3schools.html.R;
 import org.javabase.apps.w3schools.html.helper.Comunicator;
 
 
-public class HtmlActivity extends Activity implements Comunicator {
+public class HtmlTagsActivity extends AppCompatActivity implements Comunicator {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_html);
+        setContentView(R.layout.activity_html_tags);
     }
 
     @Override
     public void respond(int i) {
         FragmentManager manager = getFragmentManager();
-        FrgHtmlDescription htmlDescription = (FrgHtmlDescription) manager.findFragmentById(R.id.htmlDescriptionFragment);
-        htmlDescription.changeData(i);
+        FrgHtmlTagDescription description = (FrgHtmlTagDescription) manager.findFragmentById(R.id.htmlTagsDesFragment);
+        description.changeData(i);
     }
 }
+

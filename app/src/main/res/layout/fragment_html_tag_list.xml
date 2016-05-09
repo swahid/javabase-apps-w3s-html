@@ -9,6 +9,6 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/htmlCatList"
+        android:id="@+id/htmlTagList"
         android:layout_gravity="left|top" />
 </FrameLayout>

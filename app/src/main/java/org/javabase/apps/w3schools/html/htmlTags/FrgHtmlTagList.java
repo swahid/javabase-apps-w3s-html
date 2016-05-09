@@ -1,4 +1,4 @@
-package org.javabase.apps.w3schools.html.learnHtml;
+package org.javabase.apps.w3schools.html.htmlTags;
 
 
 
@@ -8,28 +8,29 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import org.javabase.apps.w3schools.html.R;
+import org.javabase.apps.w3schools.html.helper.Comunicator;
 
-public class HtmlCatList extends Fragment implements AdapterView.OnItemClickListener{
+public class FrgHtmlTagList extends Fragment implements AdapterView.OnItemClickListener{
 
     ListView listView;
     Comunicator comunicator;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_html_cat_list, container, false);
+        return inflater.inflate(R.layout.fragment_html_tag_list, container, false);
     }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        comunicator =null;
         comunicator = (Comunicator) getActivity();
-        listView = (ListView) getActivity().findViewById(R.id.htmlCatList);
+        listView = (ListView) getActivity().findViewById(R.id.htmlTagList);
         ArrayAdapter adapter = ArrayAdapter.createFromResource(getActivity(),R.array.htmlCatListIem, android.R.layout.simple_list_item_1);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(this);
@@ -37,7 +38,6 @@ public class HtmlCatList extends Fragment implements AdapterView.OnItemClickList
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
-
         comunicator.respond(i);
     }
 }

@@ -1,4 +1,4 @@
-package org.javabase.apps.w3schools.html.learnHtml;
+package org.javabase.apps.w3schools.html.helper;
 
 /**
  * Created by shuvo on 5/8/2016.
