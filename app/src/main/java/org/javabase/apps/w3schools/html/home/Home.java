@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import org.javabase.apps.w3schools.html.R;
+import org.javabase.apps.w3schools.html.htmlref.HtmlRef;
+import org.javabase.apps.w3schools.html.learnHtml.HtmlActivity;
 
 
 public class Home extends Activity {
@@ -19,20 +21,17 @@ public class Home extends Activity {
 
     /**
      * calling HtmlActivity onclick action on LEARNHTML button.
-     * @param v
      */
     public void htmlActivity(View v){
-        Intent intent = new Intent("org.javabase.apps.w3schools.html.learnHtml.HtmlActivity");
+        Intent intent = new Intent(this, HtmlActivity.class);
         startActivity(intent);
-//        finish();
     }
 
     /**
      * calling htmlrefence activity from htmlref button
-     * @param v
      */
     public void htmlReference(View v){
-        Intent intent = new Intent("org.javabase.apps.w3schools.html.htmlref.HtmlRef");
+        Intent intent = new Intent(this, HtmlRef.class);
         startActivity(intent);
     }
 

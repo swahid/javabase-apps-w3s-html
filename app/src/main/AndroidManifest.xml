@@ -16,18 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".learnHtml.HtmlActivity">
-            <intent-filter>
-                <action android:name="org.javabase.apps.w3schools.html.learnHtml.HtmlActivity" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
         <activity android:name=".htmlref.HtmlRef">
-            <intent-filter>
-                <action android:name="org.javabase.apps.w3schools.html.htmlref.HtmlRef" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
     </application>
 
